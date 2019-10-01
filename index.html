@@ -7,12 +7,10 @@
 
   <link rel="stylesheet" href="assets/css/main.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="assets/css/services.css" />
-    <link rel="stylesheet" href="assets/css/aboutUs.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <script src="https://kit.fontawesome.com/2467fd8360.js" crossorigin="anonymous"></script>
   <!-- <script defer="" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
+
+  <script src="assets/js/main.js"></script>
 </head>
 
 <body>
@@ -20,87 +18,43 @@
   <div id="wrapper">
 
     <!-- Header -->
-    <header id="header">
-      <h1 id="logo"><a href="index.html">Treehouse</a></h1>
-      <nav id="nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html">About</a></li>
-          <li><a href="index.html">Blog</a></li>
-          <li><a href="index.html">Portfolio</a></li>
-          <li><a href="index.html">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <a href="" class="logo">Treehouse</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="#one">Home</a></li>
+        <li><a href="#two">service</a></li>
+        <li><a href="#careers">blog</a></li>
+        <li><a href="#contact">portfolio</a></li>
+        <li><a href="#contact">portfolio</a></li>
+      </ul>
     </header>
 
     <!-- Carousel -->
-    <!-- <section id="carousel">
-      <div class="carousel-wrapper">
-        <input checked type=radio name="slider" id="slide1" />
-        <input type=radio name="slider" id="slide2" />
-        <input type=radio name="slider" id="slide3" />
-        <input type=radio name="slider" id="slide4" />
-        <input type=radio name="slider" id="slide5" />
+  
 
-        <div class="slider-wrapper">
-          <div class=inner>
-            <article>
-              <div class="info top-left">
-                <h3>Malacca</h3>
-              </div>
-              <img src="https://farm9.staticflickr.com/8059/28286750501_dcc27b1332_h_d.jpg" />
-            </article>
-
-            <article>
-              <div class="info bottom-right">
-                <h3>Cameron Highland</h3>
-              </div>
-              <img src="https://farm6.staticflickr.com/5812/23394215774_b76cd33a87_h_d.jpg" />
-            </article>
-
-            <article>
-              <div class="info bottom-left">
-                <h3>New Delhi</h3>
-              </div>
-              <img src="https://farm8.staticflickr.com/7455/27879053992_ef3f41c4a0_h_d.jpg" />
-            </article>
-
-            <article>
-              <div class="info top-right">
-                <h3>Ladakh</h3>
-              </div>
-              <img src="https://farm8.staticflickr.com/7367/27980898905_72d106e501_h_d.jpg" />
-            </article>
-
-            <article>
-              <div class="info bottom-left">
-                <h3>Nubra Valley</h3>
-              </div>
-              <img src="https://farm8.staticflickr.com/7356/27980899895_9b6c394fec_h_d.jpg" />
-            </article>
-          </div>
-        
+      <div class="slideshow-container">
+        <div class="mySlides fade" style=" display:block">
+          <img src="images/5.png" style="width:100%">
+          <div class="carousel-text">Caption Text</div>
         </div>
-       
-        <div class="slider-prev-next-control">
-          <label for=slide1></label>
-          <label for=slide2></label>
-          <label for=slide3></label>
-          <label for=slide4></label>
-          <label for=slide5></label>
-        </div>
-      
 
-        <div class="slider-dot-control">
-          <label for=slide1></label>
-          <label for=slide2></label>
-          <label for=slide3></label>
-          <label for=slide4></label>
-          <label for=slide5></label>
+        <div class="mySlides fade">
+          <img src="images/banner.png" style="width:100%">
+          <div class="carousel-text">Caption Two</div>
         </div>
-       
+
+        <div class="mySlides fade">
+          <img src="images/5.png" style="width:100%">
+          <div class="carousel-text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
       </div>
-    </section> -->
+  
 
     <!-- One -->
     <section id="one" class="center-align">
@@ -140,12 +94,12 @@
 
     <!-- Two -->
     <section id="two">
-      <div class="images-wrapper">
+      <div class="grid-container-2">
         <div class="image-container-back">
           <img class="image-back" src="images/10a.jpg" />
         </div>
         <div class="image-container-front">
-          <img class="image-front" src="images/11.png" />
+          <img class="image-front" src="images/11.jpg" />
         </div>
       </div>
     </section>
@@ -361,10 +315,10 @@
         </div>
         <div class="footer-column">
           <div class="social-icons">
-               <a href="#"><i class="fab fa-twitter"></i></a>
-               <a href="#"><i class="fab fa-facebook-f"></i></a>
-               <a href="#"><i class="fab fa-pinterest-p"></i></a>
-               <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
           </div>
         </div>
       </div>
